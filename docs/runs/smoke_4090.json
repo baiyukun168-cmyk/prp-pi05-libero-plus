@@ -1,0 +1,17 @@
+{
+  "checkpoint": "pi05_libero",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "benchmark": "libero_plus",
+  "suite": "libero_10",
+  "task_ids": [
+    0
+  ],
+  "seed": 7,
+  "episodes": 1,
+  "successes": 1,
+  "total_steps": 250,
+  "record_success": {
+    "task-0000-episode-0000": true
+  },
+  "rollout_elapsed_s": 52.50305048500013
+}
