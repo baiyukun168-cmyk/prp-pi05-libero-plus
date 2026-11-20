@@ -1,0 +1,1865 @@
+{
+  "created_utc": "20261120T134340Z",
+  "scope": "Local project and discovered experiment artifacts only",
+  "cloud_only_logs": "Not fetched in this archival task; completeness is not claimed for cloud-only logs.",
+  "excluded": [
+    "Git internals",
+    "third_party checkouts",
+    "model weights",
+    "datasets not locally present",
+    "credentials",
+    "archives produced by this task"
+  ],
+  "files": [
+    {
+      "path": "project/src/evaluation/benchmark_candidates.py",
+      "size": 7350,
+      "sha256": "8c0ea7c5e5521d80577ff712384ddfd7c87535c1fb070612f7623892766d76ca"
+    },
+    {
+      "path": "project/src/evaluation/branch_model_server.py",
+      "size": 4454,
+      "sha256": "4acb2bc51b46638c55f1d5cc05ac1f98a00fa8c54ab125e7868b0d866204562f"
+    },
+    {
+      "path": "project/src/evaluation/camera_suite_cli.py",
+      "size": 1741,
+      "sha256": "37dec17f2a60ce7f2a1ba7bb2e6c0ad7c2be0c100a8a3e9e13f86117ffe81426"
+    },
+    {
+      "path": "project/src/evaluation/camera_task_selection.py",
+      "size": 708,
+      "sha256": "75173334ff7dcdfa21a480331f8660d2bb738f2146a00f7d9d2ab6d8b596c2f6"
+    },
+    {
+      "path": "project/src/evaluation/camera_validation.py",
+      "size": 11253,
+      "sha256": "ffcfff959dca8efb15a126f7a57daada5e5e1fb51dfc24aa019c9ec4ce0e7d92"
+    },
+    {
+      "path": "project/src/evaluation/candidate_replay.py",
+      "size": 6286,
+      "sha256": "9a25233cb61fa7db0c8772776131e8370742044a5a8783ef5b9781b4c3e01b06"
+    },
+    {
+      "path": "project/src/evaluation/paired_branches.py",
+      "size": 11187,
+      "sha256": "0a54fc978dfa8ce9b9a927e16f9c80510a2e3b6f04f8503989f807a386ea6e3e"
+    },
+    {
+      "path": "project/src/policies/camera_suite_scored_policy.py",
+      "size": 739,
+      "sha256": "bf85d26d0d8795bb3399319a025510d8b28920d1f8cc22e59d507ae17d68abde"
+    },
+    {
+      "path": "project/src/policies/candidate_selection.py",
+      "size": 1072,
+      "sha256": "c2c7195d23a3fc220375debbf12e506cd11ee988e3b9723411c57a095d5daab4"
+    },
+    {
+      "path": "project/src/policies/pi05_candidate_policy.py",
+      "size": 2335,
+      "sha256": "2786f54f2e253281bb881941715e6ac0b506c4d3ac2ed95669c3ca6cbf4917a4"
+    },
+    {
+      "path": "project/src/policies/pi05_scored_candidate_policy.py",
+      "size": 4996,
+      "sha256": "f01f563b17ec669b30a7a63b8f9d58edbf782b46f848c81a6ad30158262023e2"
+    },
+    {
+      "path": "project/src/policies/pi05_shared_candidate_policy.py",
+      "size": 1678,
+      "sha256": "24e9fd76e85dc5341b62c4cf851b7a2f16f91dd0c10c8c0c6cf75c27804833b1"
+    },
+    {
+      "path": "project/src/policies/shared_prefix_sampler.py",
+      "size": 3123,
+      "sha256": "8ac4403df72273f4f63cea75607b74095cd3d8d0371ed52f9bcc140e747aa95e"
+    },
+    {
+      "path": "project/scripts/run_camera_419_job.sh",
+      "size": 960,
+      "sha256": "190c83d09ea0d38339fb8bb27402ff75a072b11676ebdacfc502bdef4821ffa8"
+    },
+    {
+      "path": "project/scripts/run_camera_pilot.sh",
+      "size": 1553,
+      "sha256": "adb87b69bfadddb85f9a918b44688f030bccef4261fd9f95deea4b3f29243b5a"
+    },
+    {
+      "path": "project/scripts/run_camera_remaining.py",
+      "size": 7498,
+      "sha256": "d07918c0d2bb581ead9bc25bf7983bda304f2ac79f26e1ca37ea009251209b60"
+    },
+    {
+      "path": "project/scripts/run_camera_scored.sh",
+      "size": 1676,
+      "sha256": "a7fc5873982528b69cbd670e5be9c7a57ae42e3a5f6bf68097e5e99993bf19d8"
+    },
+    {
+      "path": "project/scripts/run_candidate_replay.sh",
+      "size": 1432,
+      "sha256": "6b9c2289851f24f5ac37d94635cda15b1bceada5aab367c8dd18d1b1dedb437f"
+    },
+    {
+      "path": "project/scripts/run_inference_comparison.sh",
+      "size": 1071,
+      "sha256": "dc0c8cbf8e3411eeaab89ac84b62633dd72636aa8b685e7e81642d5df1205587"
+    },
+    {
+      "path": "project/scripts/run_paired_branches.sh",
+      "size": 1497,
+      "sha256": "3360b79c405273b5cd24244ea6fd12968d272648b4c2ecf824548d2f9363516d"
+    },
+    {
+      "path": "project/scripts/run_pi05_libero_plus_smoke.sh",
+      "size": 8380,
+      "sha256": "a96f51672c1ee4ed03945c7284c300e1773d9442c4317258c45ac27eaa69b627"
+    },
+    {
+      "path": "project/scripts/summarize_camera_all.py",
+      "size": 2758,
+      "sha256": "dd4cfa680e1327c0c9cde12dbb33498b59a6deeee06f1be07eab1445e4239b40"
+    },
+    {
+      "path": "project/configs/camera_419_scored.json",
+      "size": 82014,
+      "sha256": "253653316acc124e632d01bc0e3e1ec0e6cfd6e15d371ab17fba92b749cce76d"
+    },
+    {
+      "path": "project/configs/camera_libero_goal_scored.json",
+      "size": 60553,
+      "sha256": "80984dd3ea919f1b6ff58dacfe78cd6ee8b7fd1e8437bbbc089c405711fd2bce"
+    },
+    {
+      "path": "project/configs/camera_libero_object_scored.json",
+      "size": 65208,
+      "sha256": "dfc4468180c1c7877d7467b47ebeb13747b879ad5abb1f1b1feabeb235e91459"
+    },
+    {
+      "path": "project/configs/camera_libero_spatial_scored.json",
+      "size": 69469,
+      "sha256": "f5c2c13ad79e2713daecd0bc6563bb25a4915b69e7969f1d6125ad2f0ce386d7"
+    },
+    {
+      "path": "project/configs/camera_pilot.json",
+      "size": 1447,
+      "sha256": "0f3118a34bc6f734e7c1ff7d29199253fa52ca55a26877e57e1c8a5b3ee4454b"
+    },
+    {
+      "path": "project/configs/camera_scored_check.json",
+      "size": 700,
+      "sha256": "e323aa69ce79d5a6543fffdd5ee66efedb71d8cb6615b197dcfef305053e2d4b"
+    },
+    {
+      "path": "project/tests/test_camera_validation.py",
+      "size": 1239,
+      "sha256": "b75bf52f26b80c0aa5a352737c473fbe60aec3a0d5bad52f68ccea6926129a91"
+    },
+    {
+      "path": "project/tests/test_candidate_replay.py",
+      "size": 2761,
+      "sha256": "5123ee2e70742c2a1ccce4043ff47764fa97c5fbd62776b3afc0994030e2d1aa"
+    },
+    {
+      "path": "project/tests/test_candidate_selection.py",
+      "size": 1009,
+      "sha256": "111f98951afeb6e57e3bfdad5b82479af06f9c5197b56318f14e227439d0b35b"
+    },
+    {
+      "path": "project/tests/test_paired_branches.py",
+      "size": 1096,
+      "sha256": "b9051f18b0b90a44baaefe254f813ecb73131c3f06663ce18a2b09c1a6307ff9"
+    },
+    {
+      "path": "project/tests/test_pi05_candidate_policy.py",
+      "size": 5387,
+      "sha256": "406f618dc5abee58badf83c77aa95ff065d65d0e9a44a39fbf2ef31f7538781d"
+    },
+    {
+      "path": "project/tests/test_remaining_camera.py",
+      "size": 1146,
+      "sha256": "96aa797c27307ece2b6108d2cbaa655a9be08bf96a2208c7f8cd16e82bb85aee"
+    },
+    {
+      "path": "project/docs/action_reranking_experiment.md",
+      "size": 9710,
+      "sha256": "0344bdec8fe1693dfe5729a1bfb446d138144febb44e14c2d2bcda1f9bf76e9a"
+    },
+    {
+      "path": "project/docs/algorithm_ablation_report.md",
+      "size": 2704,
+      "sha256": "3aeeed5c44ff0813c230442c70e6c8c4c18ef9fa7e95dcabcb5672981554cd65"
+    },
+    {
+      "path": "project/docs/camera_419_final.md",
+      "size": 6494,
+      "sha256": "71750447a4fcf8a42550c0829614ce183503dfbdaf4da130b599b6ad9f84bb5c"
+    },
+    {
+      "path": "project/docs/camera_419_run.md",
+      "size": 2786,
+      "sha256": "bb5c11c19995be3b974d463180f25720cc3a25cc9c052d6e3ab2efa3daed65bf"
+    },
+    {
+      "path": "project/docs/camera_validation_report.md",
+      "size": 3537,
+      "sha256": "4222f210cc564471852e8f5959c01654a3f6121b146d9f43af37d09a5b9d7f43"
+    },
+    {
+      "path": "project/docs/candidate_scoring_report.md",
+      "size": 3425,
+      "sha256": "cf83b4e66e13453d99a9954a407ac33ce24bca5f2f09b0359063dba684d7b363"
+    },
+    {
+      "path": "project/docs/environment_report.md",
+      "size": 7962,
+      "sha256": "31c1a67be5716547bbe3cf276649aef9f72aab70536e663508572a2fe6c99dfa"
+    },
+    {
+      "path": "project/docs/inference_comparison_report.md",
+      "size": 3471,
+      "sha256": "7aa7a7d542503c772e360b5092af60c1e77590f450130b81bab390a9b37e09f9"
+    },
+    {
+      "path": "project/docs/next_experiments.md",
+      "size": 1305,
+      "sha256": "d6f03637f8c51aad4a673d7328ea0bc73bfea1a22fe7140fbf463f2a82cd27c3"
+    },
+    {
+      "path": "project/docs/project_code_audit.md",
+      "size": 17375,
+      "sha256": "9b0be88e8078f430dafe3d686c67c250dd1ed611c11068108d1f1fdf2528b7ed"
+    },
+    {
+      "path": "project/docs/smoke_test_report.md",
+      "size": 2716,
+      "sha256": "63631ad11754fac79053815122e0e03516161c4be8c9b3bf22d95003cf7e7460"
+    },
+    {
+      "path": "project/docs/speculative_decoding_survey.md",
+      "size": 2597,
+      "sha256": "41d59bb183e27131515d9d88563a0f3148e6f5362cfb2f112bb1598274067862"
+    },
+    {
+      "path": "project/docs/storage_layout.md",
+      "size": 2913,
+      "sha256": "8ac904b17b5a532c273a23c3079072c9ecef234b7be35a4474ae25f1cb20b88f"
+    },
+    {
+      "path": "project/README.md",
+      "size": 3562,
+      "sha256": "5ce12637cfa19b8771b2fa7cb5e858595e1f87f19f251e0e909550cce11662ba"
+    },
+    {
+      "path": "project/.gitignore",
+      "size": 289,
+      "sha256": "a242733f5756e2a3aba07069371bd60e83cea67aea26a16ba501124544968cea"
+    },
+    {
+      "path": "project/results/camera/algorithm-ablation.sf8OV2/ablation-evidence.zip",
+      "size": 776174,
+      "sha256": "0e1eb44f0c18ca27580d5c8f58412609f943bb376e86ef73d4d09bc625bfad9b"
+    },
+    {
+      "path": "project/results/camera/algorithm-ablation.sf8OV2/ablation-results.json",
+      "size": 732021,
+      "sha256": "3c6ea9aa579733f8b8807f1f750505280e4ee8f8bcea716154a9f6a1d14bb4be"
+    },
+    {
+      "path": "project/results/camera/algorithm-ablation.sf8OV2/experiment.json",
+      "size": 3904,
+      "sha256": "c9dd02506450e3453da87dea60058a1d1d2bff644b45834e4688bf15afe50681"
+    },
+    {
+      "path": "project/results/camera/algorithm-ablation.sf8OV2/finished.json",
+      "size": 82,
+      "sha256": "a99820b642a1a45d5cb8be66af35e97c1c8177f2a018d0f6a4dfe33b8e44608e"
+    },
+    {
+      "path": "project/results/camera/algorithm-ablation.sf8OV2/seed-reference-check.json",
+      "size": 211,
+      "sha256": "81bc6c5043a2cdb07be4304c102e37c0073f92e61df1130174a2414855b602d1"
+    },
+    {
+      "path": "project/results/camera/algorithm-ablation.sf8OV2/summary.json",
+      "size": 8275,
+      "sha256": "18303658959f176572af39a2dc20222c973ed926d1cb9e4651794497154792d4"
+    },
+    {
+      "path": "project/results/camera/all1599-final/all1599-20261120T123410499729.json",
+      "size": 1006,
+      "sha256": "dc219f37daebbb9a9f797179bd492e5ae2330dda92e4ca4f8df56862efe71fe7"
+    },
+    {
+      "path": "project/results/camera/all1599-final/camera-final-evidence-20261120T123410.zip",
+      "size": 83003,
+      "sha256": "902d2931e9c76282dc2fc532e85ade9b8954349949fe4751b7d55afe7f14284d"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_10/camera-selection.json",
+      "size": 82198,
+      "sha256": "e1657e19103a936a4e4e732e9026c671cbf57833517d16352d2cb2bc0a6b6570"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_10/evaluation/result.json",
+      "size": 166754,
+      "sha256": "a4ddd082375d42d2590af2e54aeddcce0eb0374c7f61b87fc3a79e95c44172ef"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_10/experiment.json",
+      "size": 3717,
+      "sha256": "71f1b41738768023ddbcfcfb6b66dd53fcb17cf2e7e7d440fd512cd7cfdc2938"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_10/finished.json",
+      "size": 108,
+      "sha256": "04937c8f999b7818612a36bfe723e3fe24dcdaa9e6bfe09a5955e9e323542f80"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_goal/camera-selection.json",
+      "size": 60553,
+      "sha256": "80984dd3ea919f1b6ff58dacfe78cd6ee8b7fd1e8437bbbc089c405711fd2bce"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_goal/evaluation/result.json",
+      "size": 149800,
+      "sha256": "fc36c6e5577a4a0ecf9bbd3da1b617ebd82033406f476f762df1ab5cb755c545"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_goal/experiment.json",
+      "size": 3272,
+      "sha256": "c98652e92dfa570677d9c71d5a1589c4d2af2b177a3a4f8b26b712823bf53dba"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_goal/finished.json",
+      "size": 113,
+      "sha256": "bc0869bc77d15a6fc623bc08931a78839c36bc480fba5a6c730d6d46ae4301ea"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_object/camera-selection.json",
+      "size": 65208,
+      "sha256": "dfc4468180c1c7877d7467b47ebeb13747b879ad5abb1f1b1feabeb235e91459"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_object/evaluation/result.json",
+      "size": 151823,
+      "sha256": "daf01e2d06861d30d62754baf7c95e07a1daf21c112f2dfdd85f4a1c20e5d2f9"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_object/experiment.json",
+      "size": 3274,
+      "sha256": "aee42aeb49f4bdcd3016519bdda602b962bcb863d798240e61f054546a273ed1"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_object/finished.json",
+      "size": 113,
+      "sha256": "91de2224bf009c66032608c63788cb5782c3618b9ba6e624c8754b2ae23e9a52"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_spatial/camera-selection.json",
+      "size": 69469,
+      "sha256": "f5c2c13ad79e2713daecd0bc6563bb25a4915b69e7969f1d6125ad2f0ce386d7"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_spatial/evaluation/result.json",
+      "size": 151548,
+      "sha256": "c107650d8a456055d8ed51d7f698543fea5eb729f97898ef6141e46706e456c9"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_spatial/experiment.json",
+      "size": 3275,
+      "sha256": "55ad5d6880ec1cb2f6058e228f8780c463ebff146249cf233e08c64a3c6b612c"
+    },
+    {
+      "path": "project/results/camera/all1599-final/libero_spatial/finished.json",
+      "size": 113,
+      "sha256": "f67b6f40e07720987f692e231dd4bddbf74303347fdec3fb2008ebc3ba69306d"
+    },
+    {
+      "path": "project/results/camera/all1599-final/verification.json",
+      "size": 3259,
+      "sha256": "e358275b255b12c6c3cb0d4d533bda869ed2affc95f9c87af816d7a417886783"
+    },
+    {
+      "path": "project/results/camera/kit-full419.xnQoJI/full-summary.json",
+      "size": 291300,
+      "sha256": "93aa44e0c16700df06ee26d6316241c92ed25ba18d31219b3c4ff7d1b5153978"
+    },
+    {
+      "path": "project/results/camera/kit-full419.xnQoJI/input-diagnosis/diagnostic-results.json",
+      "size": 23408,
+      "sha256": "ce84ab88af71b2ba8c990c4316ab703c6a62c4c213f3a8d5de485cb56796c8ee"
+    },
+    {
+      "path": "project/results/camera/kit-full419.xnQoJI/input-diagnosis/score-analysis.json",
+      "size": 141382,
+      "sha256": "311aba1c93109d237e47dcf26445e7f97efc68aeb484b32e4d9fc6153a0887d4"
+    },
+    {
+      "path": "project/results/camera/kit-full419.xnQoJI/input-diagnosis/task-selection.json",
+      "size": 8317,
+      "sha256": "613f1aae8d7ef8f9ea6cdcb1715f15c136a272a9250d8add7b4ed290270565cd"
+    },
+    {
+      "path": "project/results/camera/kit-full419.xnQoJI/input-diagnosis/validation-results.json",
+      "size": 91061,
+      "sha256": "c6e2670e79ffa6e860ec5f97b8a8d5097705127b871b335d0555ee6d2c7687ae"
+    },
+    {
+      "path": "project/results/camera/kit-full419.xnQoJI/result.json",
+      "size": 166754,
+      "sha256": "a4ddd082375d42d2590af2e54aeddcce0eb0374c7f61b87fc3a79e95c44172ef"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/branch_model_server.py",
+      "size": 3319,
+      "sha256": "fc857b51b72d233fdcc848a36dd33ef91776761ae27743e629b549f157872103"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/camera.log",
+      "size": 151607,
+      "sha256": "4d92924035816defa6f8b65ed275147748161fbc48c2d1cab509075f08675874"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/camera_validation.py",
+      "size": 7694,
+      "sha256": "616e7723fcbbbca1f731a3577cc996098dc783b3bd467b4d5353d785490d9863"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/evaluation/config.json",
+      "size": 1447,
+      "sha256": "0f3118a34bc6f734e7c1ff7d29199253fa52ca55a26877e57e1c8a5b3ee4454b"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/evaluation/episodes.jsonl",
+      "size": 636874,
+      "sha256": "cce5cb729a53fdebe6d74a5b5c82dd26bcf763eb11dab37c547558491819a6f9"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/evaluation/model.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/evaluation/progress.json",
+      "size": 466,
+      "sha256": "b8881aba029edacd5f7d485717b7bb2be2762dfcfaafb0879b876905859f8867"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ/evaluation/summary.json",
+      "size": 466,
+      "sha256": "b8881aba029edacd5f7d485717b7bb2be2762dfcfaafb0879b876905859f8867"
+    },
+    {
+      "path": "project/results/camera/pilot.a6fKUQ.tar.gz",
+      "size": 281754,
+      "sha256": "a1ce3d417644843a76138c0511dab5ff6dfc1a0f94908ef058ba101b130d9ba4"
+    },
+    {
+      "path": "project/results/camera/remaining_bundle/camera_suite_cli.py",
+      "size": 1741,
+      "sha256": "37dec17f2a60ce7f2a1ba7bb2e6c0ad7c2be0c100a8a3e9e13f86117ffe81426"
+    },
+    {
+      "path": "project/results/camera/remaining_bundle/camera_suite_scored_policy.py",
+      "size": 739,
+      "sha256": "bf85d26d0d8795bb3399319a025510d8b28920d1f8cc22e59d507ae17d68abde"
+    },
+    {
+      "path": "project/results/camera/remaining_bundle/configs/camera_libero_goal_scored.json",
+      "size": 60553,
+      "sha256": "80984dd3ea919f1b6ff58dacfe78cd6ee8b7fd1e8437bbbc089c405711fd2bce"
+    },
+    {
+      "path": "project/results/camera/remaining_bundle/configs/camera_libero_object_scored.json",
+      "size": 65208,
+      "sha256": "dfc4468180c1c7877d7467b47ebeb13747b879ad5abb1f1b1feabeb235e91459"
+    },
+    {
+      "path": "project/results/camera/remaining_bundle/configs/camera_libero_spatial_scored.json",
+      "size": 69469,
+      "sha256": "f5c2c13ad79e2713daecd0bc6563bb25a4915b69e7969f1d6125ad2f0ce386d7"
+    },
+    {
+      "path": "project/results/camera/remaining_bundle/run_camera_remaining.py",
+      "size": 7498,
+      "sha256": "d07918c0d2bb581ead9bc25bf7983bda304f2ac79f26e1ca37ea009251209b60"
+    },
+    {
+      "path": "project/results/camera/remaining_bundle/summarize_camera_all.py",
+      "size": 2758,
+      "sha256": "dd4cfa680e1327c0c9cde12dbb33498b59a6deeee06f1be07eab1445e4239b40"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/branch_model_server.py",
+      "size": 1355,
+      "sha256": "07f16342e2413a0767f8d3afd4d91260ef157756eb431e108c5d23f5fe7ebd9c"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/branches.jsonl",
+      "size": 175948,
+      "sha256": "721eecbf8aa9f5c850fec4fbb3eefc4b6cc6bf19d1fa19ae7abc6ca69863e9e6"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/inference_batch_benchmark.json",
+      "size": 57083,
+      "sha256": "d870de901ea6f40a30e02115da220c9ec060df6334e3c3af62482660f677defb"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/inference_benchmark.json",
+      "size": 23022,
+      "sha256": "69149be72c05728182120727624d70bc513453d13f44d0a500be532e1b4174c3"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/inference_shared_benchmark.json",
+      "size": 57580,
+      "sha256": "703ab8b84ff00fbaf44ed36bbfb8a3401d1fe6fe84dd8d8e123eb506f2f28478"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/model.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/node-0-candidate-0.instruction.txt",
+      "size": 52,
+      "sha256": "aa09222549d93ac5a0f9ed8a614fc0169a9d5e5991a1e67003042db232b4d1de"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/node-0-candidate-0.npz",
+      "size": 162472,
+      "sha256": "805456f0935e968875a18d4d25eeeca7687e7b283be914c7ea6b6025eb56c4d4"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/node-0-candidate-1.npz",
+      "size": 162472,
+      "sha256": "805456f0935e968875a18d4d25eeeca7687e7b283be914c7ea6b6025eb56c4d4"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/node-15-candidate-0.npz",
+      "size": 141730,
+      "sha256": "79fd0966961dda6363d53400404cc4ef4baa5d53c97d5fcf8474936b04e1c342"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/node-15-candidate-1.npz",
+      "size": 141730,
+      "sha256": "79fd0966961dda6363d53400404cc4ef4baa5d53c97d5fcf8474936b04e1c342"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/node-30-candidate-0.npz",
+      "size": 164985,
+      "sha256": "353e6f98bd6a60e6a0d72beaa8ef1945002c7c615f88a5d54857418aca6ea427"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/node-30-candidate-1.npz",
+      "size": 164985,
+      "sha256": "353e6f98bd6a60e6a0d72beaa8ef1945002c7c615f88a5d54857418aca6ea427"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/evaluation/summary.json",
+      "size": 578,
+      "sha256": "48b2376a40f75b7e92acc416f3a14c18f64a04552565b85ddbbb126e5bd9947c"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/paired.log",
+      "size": 86690,
+      "sha256": "38325921ed05813e74a44acad8e615b1b22d54333ccf3b05a055f6ddcb96e131"
+    },
+    {
+      "path": "project/results/paired/branches.g3IfCY/paired_branches.py",
+      "size": 8063,
+      "sha256": "c3361958531968c6b9f652080ec9bc3bdfb0bf3463a87a8aafa5d14e5fba0bac"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/branch_model_server.py",
+      "size": 1622,
+      "sha256": "02eafb9d3a3fade14a184a0bdacce82adcb31d11452bd6b5ee01c6051d1960c8"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/branches.jsonl",
+      "size": 152726,
+      "sha256": "bce6438eee3eb4e3ecacf759f36aedf256a27e4bad545f6fec32f707c83be866"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/model.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-0-candidate-0.instruction.txt",
+      "size": 101,
+      "sha256": "0dc43d620339b2258ed5e953d55629c4465c11c044e7857ec59e7ce7d9fd3f7e"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-0-candidate-0.npz",
+      "size": 177041,
+      "sha256": "3f2eb5fedda92da4f96d1808711f1a46d711bc1dcb19270e48c0ee6c242a3cac"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-0-candidate-1.instruction.txt",
+      "size": 101,
+      "sha256": "0dc43d620339b2258ed5e953d55629c4465c11c044e7857ec59e7ce7d9fd3f7e"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-0-candidate-1.npz",
+      "size": 177041,
+      "sha256": "3f2eb5fedda92da4f96d1808711f1a46d711bc1dcb19270e48c0ee6c242a3cac"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-15-candidate-0.instruction.txt",
+      "size": 101,
+      "sha256": "0dc43d620339b2258ed5e953d55629c4465c11c044e7857ec59e7ce7d9fd3f7e"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-15-candidate-0.npz",
+      "size": 181741,
+      "sha256": "96baad78450e173831c3f57c1b492006bf871a36356f845e0c6cbd82448404f9"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-15-candidate-1.instruction.txt",
+      "size": 101,
+      "sha256": "0dc43d620339b2258ed5e953d55629c4465c11c044e7857ec59e7ce7d9fd3f7e"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/node-15-candidate-1.npz",
+      "size": 181741,
+      "sha256": "96baad78450e173831c3f57c1b492006bf871a36356f845e0c6cbd82448404f9"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/source_candidates.jsonl",
+      "size": 78244,
+      "sha256": "6a30fa91d3fd1e7ec6c1cbe07d53918660a9440fd42d0269f93bee459f843ca1"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/source_outcome.json",
+      "size": 179,
+      "sha256": "a76d7679c66d04e3ee23c254bcb5915f4552b8382cd65a29c9cf35341a666b7a"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/evaluation/summary.json",
+      "size": 573,
+      "sha256": "252a374fe43f0a9675db9a8300308974c8c6971ef165b2d9995c2ca4c959578e"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/paired.log",
+      "size": 72565,
+      "sha256": "25e29e60867ca176188089db83ea6ba22695c5a07adc03ccff3f8d12273d2b3a"
+    },
+    {
+      "path": "project/results/paired/branches.krbEzS/paired_branches.py",
+      "size": 11187,
+      "sha256": "0a54fc978dfa8ce9b9a927e16f9c80510a2e3b6f04f8503989f807a386ea6e3e"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/branch_model_server.py",
+      "size": 1622,
+      "sha256": "02eafb9d3a3fade14a184a0bdacce82adcb31d11452bd6b5ee01c6051d1960c8"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/branches.jsonl",
+      "size": 150141,
+      "sha256": "e9a978997d3db5b121a951d2ac31719927d9fa25217b4ee7390f464c21305ee0"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/model.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-0-candidate-0.instruction.txt",
+      "size": 98,
+      "sha256": "53a35ecbe13ca3df55033da95c25b3d10dec20314491248f3f6928bb2c6f7996"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-0-candidate-0.npz",
+      "size": 146625,
+      "sha256": "7d6fccbb54bf4ddac47cd3e24270e6191505dcdfb712125cff4ae1a77c8e4ca7"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-0-candidate-1.instruction.txt",
+      "size": 98,
+      "sha256": "53a35ecbe13ca3df55033da95c25b3d10dec20314491248f3f6928bb2c6f7996"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-0-candidate-1.npz",
+      "size": 146625,
+      "sha256": "7d6fccbb54bf4ddac47cd3e24270e6191505dcdfb712125cff4ae1a77c8e4ca7"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-15-candidate-0.instruction.txt",
+      "size": 98,
+      "sha256": "53a35ecbe13ca3df55033da95c25b3d10dec20314491248f3f6928bb2c6f7996"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-15-candidate-0.npz",
+      "size": 144765,
+      "sha256": "4763309f93dfed23962ff24ce9151c2693622e2ae7f39d840e8b3ae4fe365c55"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-15-candidate-1.instruction.txt",
+      "size": 98,
+      "sha256": "53a35ecbe13ca3df55033da95c25b3d10dec20314491248f3f6928bb2c6f7996"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/node-15-candidate-1.npz",
+      "size": 144765,
+      "sha256": "4763309f93dfed23962ff24ce9151c2693622e2ae7f39d840e8b3ae4fe365c55"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/source_candidates.jsonl",
+      "size": 107284,
+      "sha256": "2041f2b58d280747d35b8a39424c3bf8be2c241c89a30a004885d9f476a1c2bd"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/source_outcome.json",
+      "size": 175,
+      "sha256": "c77f2eb9927c27c28ae9761828b146a30f26089bb29acba537c6bd657d9df50a"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/evaluation/summary.json",
+      "size": 572,
+      "sha256": "c94e0f7fd45d0b950ee728a9ee7ad97912bb67487275a8a74f0b979723259b52"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/paired.log",
+      "size": 72564,
+      "sha256": "157da7cb2f35c24b16015fab8ebf16f74da2a64b33b092b51c5803a3c647bc63"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy/paired_branches.py",
+      "size": 11187,
+      "sha256": "0a54fc978dfa8ce9b9a927e16f9c80510a2e3b6f04f8503989f807a386ea6e3e"
+    },
+    {
+      "path": "project/results/paired/branches.rSMnGy.tar.gz",
+      "size": 695902,
+      "sha256": "db34380891f0e916547e7aeaa6871ec486ea6b8e6448a9a2b193657d5e42e37b"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/branch_model_server.py",
+      "size": 1622,
+      "sha256": "02eafb9d3a3fade14a184a0bdacce82adcb31d11452bd6b5ee01c6051d1960c8"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/branches.jsonl",
+      "size": 164788,
+      "sha256": "8201d2e20fb04b1e55aceaa02233b35c016f441a228ff11607d3a02a301ec9a2"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/model.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-0-candidate-0.instruction.txt",
+      "size": 118,
+      "sha256": "c805f73a66321a053ec3ab7a7375095f28a8a64564aeebe28f380ce871fb4ce3"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-0-candidate-0.npz",
+      "size": 180177,
+      "sha256": "da4d708db4831190e110434d6d0e2ba1cded254639b11ad30d81f2577a16adf3"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-0-candidate-1.instruction.txt",
+      "size": 118,
+      "sha256": "c805f73a66321a053ec3ab7a7375095f28a8a64564aeebe28f380ce871fb4ce3"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-0-candidate-1.npz",
+      "size": 180177,
+      "sha256": "da4d708db4831190e110434d6d0e2ba1cded254639b11ad30d81f2577a16adf3"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-15-candidate-0.instruction.txt",
+      "size": 118,
+      "sha256": "c805f73a66321a053ec3ab7a7375095f28a8a64564aeebe28f380ce871fb4ce3"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-15-candidate-0.npz",
+      "size": 177681,
+      "sha256": "889572b3ca3807740ada272f868710c5f441441cfab6958bc59ec40f7c5aa5ba"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-15-candidate-1.instruction.txt",
+      "size": 118,
+      "sha256": "c805f73a66321a053ec3ab7a7375095f28a8a64564aeebe28f380ce871fb4ce3"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/node-15-candidate-1.npz",
+      "size": 177681,
+      "sha256": "889572b3ca3807740ada272f868710c5f441441cfab6958bc59ec40f7c5aa5ba"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/source_candidates.jsonl",
+      "size": 89682,
+      "sha256": "c4f0b978acebd1277f31c7a084255ae4235a790c6011b5329e6a3bd74b517ccb"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/source_outcome.json",
+      "size": 195,
+      "sha256": "c6647d334e11ed567bbd1ae9702d72dd02750b52f3500185d0fdccaef90b74b8"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/evaluation/summary.json",
+      "size": 572,
+      "sha256": "5e9fa9fb711f85fcab3f26dc9fa9c20d92c6c1eb4deb0001f899998eb7b74756"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/paired.log",
+      "size": 72564,
+      "sha256": "dfbe7222cff523dd186de478bab4757ca14bc65f02f1c039a9a1835d96f670f5"
+    },
+    {
+      "path": "project/results/paired/branches.SP9eVO/paired_branches.py",
+      "size": 11187,
+      "sha256": "0a54fc978dfa8ce9b9a927e16f9c80510a2e3b6f04f8503989f807a386ea6e3e"
+    },
+    {
+      "path": "project/results/paired/layout-and-robot-20261119.tar.gz",
+      "size": 1638240,
+      "sha256": "4db7ffe65f7069ba771caad18e0d1791b40be68d6f516063e29c4f207b9d6765"
+    },
+    {
+      "path": "project/results/paired/task_classification.json",
+      "size": 1994795,
+      "sha256": "faa87cce3e3ba434da01df7c77523a391b5f2912e4774330b0aa1be5f6a999e6"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.FpcciH/candidate_replay.py",
+      "size": 6286,
+      "sha256": "9a25233cb61fa7db0c8772776131e8370742044a5a8783ef5b9781b4c3e01b06"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.FpcciH/evaluation/replay-0.json",
+      "size": 475710,
+      "sha256": "e24ea666f45a6a19822b1a5a9a2462ec05d73d33142c7e7169debcaf940e8cda"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.FpcciH/evaluation/replay-1.json",
+      "size": 475710,
+      "sha256": "defd629743df7d1efa3e3b25742112913ab06bd44ed1b1a5246214e7e1ef5e6c"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.FpcciH/evaluation/summary.json",
+      "size": 1003,
+      "sha256": "c1a3b861dfd99d2975e187b9b528ca93d6aa06b0dbe911c6a076c5437db79081"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.FpcciH/replay.log",
+      "size": 30727,
+      "sha256": "48ec4a97c22239ddf59dd40c26c5d87487f568a1c733755188a78015d9de7823"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.QJ30Il/candidate_replay.py",
+      "size": 5204,
+      "sha256": "71925cb2b13f8173b1a76557448b372465b72e13e1b95837704163c7dcbfb3ca"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.QJ30Il/evaluation/replay-0.json",
+      "size": 475710,
+      "sha256": "defd629743df7d1efa3e3b25742112913ab06bd44ed1b1a5246214e7e1ef5e6c"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.QJ30Il/evaluation/replay-1.json",
+      "size": 475710,
+      "sha256": "3adeb9fb56c1dcac1ed77de2d49a4b9ce2235990638ae12ff9c6a77f8c1ace07"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.QJ30Il/evaluation/summary.json",
+      "size": 798,
+      "sha256": "337593ed6f7bd6174affe3a1d9e719ccd1b42079fa821c5b01e5351cf4896b0e"
+    },
+    {
+      "path": "project/results/replay/candidate-replay.QJ30Il/replay.log",
+      "size": 30589,
+      "sha256": "01eab9024c14e3e45c8d3c60e502be1118c79722787de966b4a4f9db0fb2cfba"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/candidates.jsonl",
+      "size": 85223,
+      "sha256": "a1e83c923ff70c48a7e96dfb5bc6a35eff1c659e2a72a8799930c08e3d23bc3b"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/events.jsonl",
+      "size": 897,
+      "sha256": "eade1a8bda885bac07e41921e75725c9de34904103c582dc734a376b060ce3e2"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/manifest.json",
+      "size": 883,
+      "sha256": "b3df2d1fbb1cd2ee7d843e640b74f6afbba81d2a2fc5c2b1a241c219ac88645f"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/metrics.json",
+      "size": 332,
+      "sha256": "debcb3c1fce30e5a5eca2c74fb0dd93237f25c666ed3f35a89fce34f6add091f"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/progress.json",
+      "size": 170,
+      "sha256": "2cf00acb3f3c48bc6358f3d1af770972d7530832a1c902bd114721fac71bfafe"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/queue/completed/item-000000-ad3ce24cdc3b.json",
+      "size": 553,
+      "sha256": "b49ebe458cf783096b9a9b0e9a32d0201ef9a9b04aa3dcc36d62b5f56cddf50f"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/queue/start",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/queue/stop",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/result.json",
+      "size": 4309,
+      "sha256": "2e17d617efb99870c7d397c39afaa288c084c9915829166449c972edf70d6b94"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/servers/replica-000.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/worker-state/libero-config/config.yaml",
+      "size": 370,
+      "sha256": "88bbd9bd83939f846c1375c1c909492226ef2231c35ca2485b45d8e75203fcbb"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/worker-state/worker-000.json",
+      "size": 139,
+      "sha256": "7b6f4a766c7a438f8c894983ac6dad2dfd2d865a011909468992ec140a06a9fb"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/evaluation/workers/worker-000-attempt-000.log",
+      "size": 15694,
+      "sha256": "18132174a277fc65090d38728a21aa2ba94ed709b84c1c5101b0cd9d146f2859"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/pi05_candidate_policy.py",
+      "size": 2129,
+      "sha256": "2fe9be0dab95d857117688d1d37897085d812b2bef61fd3a68b0e3fef0592c57"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/policy.py",
+      "size": 2779,
+      "sha256": "0cd65a33ab79497f02731b54d95ff67f7d021ad2ac0c22979b4e6130f04a02c3"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-candidates.6qLk3g/roboscope-policy.json",
+      "size": 337,
+      "sha256": "d63808f35b47bb4e153b1955d5865ffcfaaf398064fe5b1cbe36d5f2451d3d12"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/candidate_selection.py",
+      "size": 1072,
+      "sha256": "c2c7195d23a3fc220375debbf12e506cd11ee988e3b9723411c57a095d5daab4"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/candidates.jsonl",
+      "size": 143514,
+      "sha256": "23bc309fba9c04daca47844b091c6b482fa824e4a79892ad2407411e4ec4d21b"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/events.jsonl",
+      "size": 897,
+      "sha256": "a541e8b9a68d4c0c29d49493f59a0486b4fb78b6c140f364e57e4f9455ca14d0"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/manifest.json",
+      "size": 883,
+      "sha256": "b3df2d1fbb1cd2ee7d843e640b74f6afbba81d2a2fc5c2b1a241c219ac88645f"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/metrics.json",
+      "size": 332,
+      "sha256": "c76a2079dd154d861cc86788741152698fc0df25676520330093d265b7c536cb"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/progress.json",
+      "size": 170,
+      "sha256": "2cf00acb3f3c48bc6358f3d1af770972d7530832a1c902bd114721fac71bfafe"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/queue/completed/item-000000-ad3ce24cdc3b.json",
+      "size": 553,
+      "sha256": "75bfa3e380e1f8f2eca275c16076e53809ac66e5352c1369b88a978f86ef962f"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/queue/start",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/queue/stop",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/result.json",
+      "size": 4299,
+      "sha256": "677931f5e66e90061f559f0a9a314e03075ef6109927452ccc7089c20a1a1cfe"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/servers/replica-000.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/worker-state/libero-config/config.yaml",
+      "size": 370,
+      "sha256": "88bbd9bd83939f846c1375c1c909492226ef2231c35ca2485b45d8e75203fcbb"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/worker-state/worker-000.json",
+      "size": 139,
+      "sha256": "f95af5edf4cda87f9db790142acc77cb701f72a3106e4d3821e062fc37732d1b"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/evaluation/workers/worker-000-attempt-000.log",
+      "size": 15694,
+      "sha256": "18132174a277fc65090d38728a21aa2ba94ed709b84c1c5101b0cd9d146f2859"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/pi05_candidate_policy.py",
+      "size": 2335,
+      "sha256": "2786f54f2e253281bb881941715e6ac0b506c4d3ac2ed95669c3ca6cbf4917a4"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/pi05_scored_candidate_policy.py",
+      "size": 4603,
+      "sha256": "13bd14bfef820cddf5d22a01dbe4d62df5fcc19ad42af561e6390e2ea78b4d85"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/policy.py",
+      "size": 2779,
+      "sha256": "0cd65a33ab79497f02731b54d95ff67f7d021ad2ac0c22979b4e6130f04a02c3"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/roboscope-policy.json",
+      "size": 340,
+      "sha256": "d77545befc0bdee2a4676ebbb4c4f3fe6946ddaa9129e7b93036b3925f181880"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-scored.yi0S2W/shared_prefix_sampler.py",
+      "size": 3123,
+      "sha256": "8ac4403df72273f4f63cea75607b74095cd3d8d0371ed52f9bcc140e747aa95e"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/candidates.jsonl",
+      "size": 83338,
+      "sha256": "81d5eb56f7c131f6f2740e969c64cd18a5c70b828dd7eead7f34780bab67bd9c"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/events.jsonl",
+      "size": 895,
+      "sha256": "a94b1a6a5e7ceab11b63f328f0d83cf495127deb65fd0eb9a813f4eb7b2a52b6"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/manifest.json",
+      "size": 883,
+      "sha256": "b3df2d1fbb1cd2ee7d843e640b74f6afbba81d2a2fc5c2b1a241c219ac88645f"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/metrics.json",
+      "size": 333,
+      "sha256": "13409282e6bfbdbb832b4408379f56a26ea40899b3abb021d26f26c9f6d8d1ac"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/progress.json",
+      "size": 170,
+      "sha256": "b208e72271a5d39d7395ce5f40354795f37e6e0e5ddcccdbd4a81c9b3abcdf7b"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/queue/completed/item-000000-ad3ce24cdc3b.json",
+      "size": 554,
+      "sha256": "d103bec0b908d1eba2de6e3af8aa4ce38e2a9acbee3eef7f62c71eeed04ce223"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/queue/start",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/queue/stop",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/result.json",
+      "size": 4297,
+      "sha256": "1eac9b1accdc4df5d9936ead227496ef265c34f0c957c527c746101cb7f93ae7"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/servers/replica-000.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/worker-state/libero-config/config.yaml",
+      "size": 370,
+      "sha256": "88bbd9bd83939f846c1375c1c909492226ef2231c35ca2485b45d8e75203fcbb"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/worker-state/worker-000.json",
+      "size": 139,
+      "sha256": "155f3af1c3b9c72aaaf4df41869f1e1dc14df4e4ffb48c247b0bcd46583e11ff"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/evaluation/workers/worker-000-attempt-000.log",
+      "size": 15694,
+      "sha256": "18132174a277fc65090d38728a21aa2ba94ed709b84c1c5101b0cd9d146f2859"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/pi05_candidate_policy.py",
+      "size": 2335,
+      "sha256": "2786f54f2e253281bb881941715e6ac0b506c4d3ac2ed95669c3ca6cbf4917a4"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/pi05_shared_candidate_policy.py",
+      "size": 1678,
+      "sha256": "24e9fd76e85dc5341b62c4cf851b7a2f16f91dd0c10c8c0c6cf75c27804833b1"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/policy.py",
+      "size": 2779,
+      "sha256": "0cd65a33ab79497f02731b54d95ff67f7d021ad2ac0c22979b4e6130f04a02c3"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/roboscope-policy.json",
+      "size": 340,
+      "sha256": "77c0d1771617cf209ecbca2efe10c4fd739d90366d6b5b7ef64b7b925c72966d"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus-shared.AFJt4J/shared_prefix_sampler.py",
+      "size": 2373,
+      "sha256": "d164901ff873e25a79e15631d8c0efa63ef5cf40533c406b009dc06f42b663ed"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/events.jsonl",
+      "size": 896,
+      "sha256": "2e2f6678d908e3ed72a34c6b413374ef4a440a9d4687ec2179abeee2504a691e"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/manifest.json",
+      "size": 883,
+      "sha256": "b3df2d1fbb1cd2ee7d843e640b74f6afbba81d2a2fc5c2b1a241c219ac88645f"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/metrics.json",
+      "size": 333,
+      "sha256": "ac8577c3d05619cf7e85444b34f1ded30778dd3bf4467b11875226ade700ee37"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/progress.json",
+      "size": 170,
+      "sha256": "15ffefcaef626d56175e0263edd088efca3b72b04addc96c5eaec5434e9b4d2c"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/queue/completed/item-000000-ad3ce24cdc3b.json",
+      "size": 551,
+      "sha256": "89b55e1a55d85ead5658c92b592323c9691fd0255a56dcdbfd5203bd05878fd6"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/queue/start",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/queue/stop",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/result.json",
+      "size": 4294,
+      "sha256": "02b9f170d7c0df991081a9b676e0a65221cf611ff396a9cee9a6cc0a3919f78b"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/servers/replica-000.log",
+      "size": 28,
+      "sha256": "9de9f9bccc64ebca484f87c51c3b2537f9f0791a669c06b60adaf1180fc469ba"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/worker-state/libero-config/config.yaml",
+      "size": 370,
+      "sha256": "88bbd9bd83939f846c1375c1c909492226ef2231c35ca2485b45d8e75203fcbb"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/worker-state/worker-000.json",
+      "size": 139,
+      "sha256": "b16bd6dcc5b7f44c0ff7392e23d60ed66ef9aef1e3d9e64e2e49776cdc388a3d"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/evaluation/workers/worker-000-attempt-000.log",
+      "size": 15694,
+      "sha256": "18132174a277fc65090d38728a21aa2ba94ed709b84c1c5101b0cd9d146f2859"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/policy.py",
+      "size": 2286,
+      "sha256": "6406e9bcf6fe8705d859ef7ad41d38a6cd94804d37ba004ee61f03eab444966d"
+    },
+    {
+      "path": "project/results/smoke/pi05-libero-plus.kScLjd/roboscope-policy.json",
+      "size": 315,
+      "sha256": "659c2236c49e7378df25c8a83a48d943e9f645cc28eb3f8f18d685a86abfcca9"
+    },
+    {
+      "path": "experiment-artifacts/ablation_cli.py",
+      "size": 1015,
+      "sha256": "ab4a69b9f41f96cf722efc8184f2ade54959f3715cb67d82a33f39ec70f0c136"
+    },
+    {
+      "path": "experiment-artifacts/ablation_policy.py",
+      "size": 6295,
+      "sha256": "9591727eee4db5d6c02cfb1b8457fd479a369a20e91f406e7f951d0cdebf0f13"
+    },
+    {
+      "path": "experiment-artifacts/ablation_run.py",
+      "size": 6110,
+      "sha256": "790565b6cfed317296485bc72b54ec1ea547c42feacad5e605ab60d63ffb1e0d"
+    },
+    {
+      "path": "experiment-artifacts/ablation_summarize.py",
+      "size": 7666,
+      "sha256": "d2e707a7e0ce84adbbbf9e1fc09645db8599a2964b272a1bfc9564172d222302"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/ablation-evidence.zip",
+      "size": 776174,
+      "sha256": "0e1eb44f0c18ca27580d5c8f58412609f943bb376e86ef73d4d09bc625bfad9b"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/ablation-results.json",
+      "size": 732021,
+      "sha256": "3c6ea9aa579733f8b8807f1f750505280e4ee8f8bcea716154a9f6a1d14bb4be"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/ablation_cli.py",
+      "size": 1015,
+      "sha256": "ab4a69b9f41f96cf722efc8184f2ade54959f3715cb67d82a33f39ec70f0c136"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/ablation_policy.py",
+      "size": 6295,
+      "sha256": "9591727eee4db5d6c02cfb1b8457fd479a369a20e91f406e7f951d0cdebf0f13"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/ablation_run.py",
+      "size": 6110,
+      "sha256": "790565b6cfed317296485bc72b54ec1ea547c42feacad5e605ab60d63ffb1e0d"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/ablation_summarize.py",
+      "size": 7666,
+      "sha256": "d2e707a7e0ce84adbbbf9e1fc09645db8599a2964b272a1bfc9564172d222302"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/environment.json",
+      "size": 10509,
+      "sha256": "2ed3ded85c5398ab2fec5e30ee72fb7c8e9108bd8cc8816b8f2e21a18fa7097e"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/experiment.json",
+      "size": 3904,
+      "sha256": "c9dd02506450e3453da87dea60058a1d1d2bff644b45834e4688bf15afe50681"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/finished.json",
+      "size": 82,
+      "sha256": "a99820b642a1a45d5cb8be66af35e97c1c8177f2a018d0f6a4dfe33b8e44608e"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed-reference-check.json",
+      "size": 211,
+      "sha256": "81bc6c5043a2cdb07be4304c102e37c0073f92e61df1130174a2414855b602d1"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-four/command.json",
+      "size": 645,
+      "sha256": "71390de3be733e2c10c04cf16fb88aa3cd2df846fc49f62698020049a3c95cb6"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-four/evaluation/result.json",
+      "size": 13918,
+      "sha256": "2a78684e3ea1d9c5aeba9112ca9b3e1e8970369b2effb02a73f08c4399c5252d"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-four/initial-inputs.jsonl",
+      "size": 14377,
+      "sha256": "bd023d1c47142e0ed7e4862af57d20538879c4218d87650c1fb210565a75fa4d"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-four/policy-config.json",
+      "size": 509,
+      "sha256": "3fccd6bb472481b124ce68038d1f6477fb668f8e16bdeba03cf3fa1a58e676bc"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-four/timing.jsonl",
+      "size": 551883,
+      "sha256": "185fe3a5265f8f10264fc5421a9f6d0b146b1d69787ad69feb4c99a3b4cdd329"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-scored/command.json",
+      "size": 649,
+      "sha256": "1bfc84274dba864d0a2023fa296ff9e8a64fb4e974af26b8be78277264fc6616"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-scored/evaluation/result.json",
+      "size": 13915,
+      "sha256": "16b9d46cc7b941fe8e3b4cd5f04080c162c345ce88e2b6ca501122bb8cdf4cc4"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-scored/initial-inputs.jsonl",
+      "size": 14377,
+      "sha256": "0e497d4ae08cb779b3551b143d6afbece1ac89c8d24250746611bcf2cc47bf9e"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-scored/policy-config.json",
+      "size": 513,
+      "sha256": "4e655d637fd8adadbdaa9cfb3c0a47a6c971bd12b01373e290cd180b6b43dad6"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-scored/timing.jsonl",
+      "size": 709845,
+      "sha256": "fd8806de9937618f0c142452a868b5a8e23204b0bb47f9c2f9cc283f16e3b7b6"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-ten/command.json",
+      "size": 643,
+      "sha256": "19e194cd407cedbe5868524acd0b6d1da5de36effd7327f92e7e0dd721e004ec"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-ten/evaluation/result.json",
+      "size": 13914,
+      "sha256": "a007b1afb69f7a14fb11684b9008b7997a8a761d11b116e398f2a9e1e79c5771"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-ten/initial-inputs.jsonl",
+      "size": 14377,
+      "sha256": "ed57a7b8129d215c19ec3d1802c08fd13e2eee556fff58b8f8da163fd3c9af9f"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-ten/policy-config.json",
+      "size": 507,
+      "sha256": "cbc3d857f7904ca5b6548fbb883e80fd23920c59be5a9cbb65672606def1572b"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed17-ten/timing.jsonl",
+      "size": 532778,
+      "sha256": "6e68806701389de6e89d309558fb721e6f5516dbd63b241f2b809e2b7f17e67a"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-four/command.json",
+      "size": 643,
+      "sha256": "0e7528eda8fd59822fdbe81b2cba642de06a40dfb02c25d3b3de79e57d5d4960"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-four/evaluation/result.json",
+      "size": 13914,
+      "sha256": "50d026dd9b4a5aa252f5a83afbe051e027753b363c9cdb0d628509e650c80166"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-four/initial-inputs.jsonl",
+      "size": 14377,
+      "sha256": "28063b814369060a4e4af025c488393b957932655517c83bbfb525674b62758a"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-four/policy-config.json",
+      "size": 507,
+      "sha256": "e39f0f9cf7148b092c43a6ecfa9d02884be10a51cfec6e76eb910f7b3e9e0642"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-four/timing.jsonl",
+      "size": 560082,
+      "sha256": "d9a7bd55019629cde6bd813daaedf591af91c78dd8ae8cc5e4d09da1eb2200cc"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-scored/command.json",
+      "size": 647,
+      "sha256": "573942262978d9e8e8c30fd66c909dd70e66591b16f23e485a3cdf05d6a36ded"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-scored/evaluation/result.json",
+      "size": 13918,
+      "sha256": "6983b8c7a1cca73615deae8947f18042df35e0f4b701d03facc4f7edddc5d050"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-scored/initial-inputs.jsonl",
+      "size": 14377,
+      "sha256": "43891cdbf78dce460a7d0a1da7e88a1be2f75c075aff150738595d95b2f432b1"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-scored/policy-config.json",
+      "size": 511,
+      "sha256": "f3883cb23e8efb9ecbb7f7e0805678cc58e3206f53668e64143a8d03b751955d"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-scored/timing.jsonl",
+      "size": 723055,
+      "sha256": "531a02235b7a97ff2c1b5142a45de65bea2906acb44bab69577048ff1dbedd3a"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-ten/command.json",
+      "size": 641,
+      "sha256": "6b03864e6a66d1e6563cd8c62d2e559dafca146d3dc3fdcdeb6d0b7d9692bddd"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-ten/evaluation/result.json",
+      "size": 13915,
+      "sha256": "ec04386f091fc57d995fc9aaa2f0acad7929a3caa2304d8e1d3c6343c73ac6df"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-ten/initial-inputs.jsonl",
+      "size": 14377,
+      "sha256": "d276cab2ae5bee1b1b3aaa5a613fbe8a96280702ce3f13657c6d6dee0b488497"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-ten/policy-config.json",
+      "size": 505,
+      "sha256": "c7c348f920467bae2b8521769d85dd635d64975b4aab3b4959925832ee0e4fa2"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/seed7-ten/timing.jsonl",
+      "size": 533852,
+      "sha256": "6fc5df2af067c5914e95e43a932ad5fbafb480940bd5bd0f3579b259dcc3d60e"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/summary.json",
+      "size": 8275,
+      "sha256": "18303658959f176572af39a2dc20222c973ed926d1cb9e4651794497154792d4"
+    },
+    {
+      "path": "experiment-artifacts/algorithm-ablation-results/task-selection.json",
+      "size": 8236,
+      "sha256": "2e849cae879d4808e7362be980fe023456d05ff3cc99250d6e0e32815077c13c"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/all1599-20261120T123410499729.json",
+      "size": 1006,
+      "sha256": "dc219f37daebbb9a9f797179bd492e5ae2330dda92e4ca4f8df56862efe71fe7"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/camera-final-evidence-20261120T123410.zip",
+      "size": 83003,
+      "sha256": "902d2931e9c76282dc2fc532e85ade9b8954349949fe4751b7d55afe7f14284d"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_10/camera-selection.json",
+      "size": 82198,
+      "sha256": "e1657e19103a936a4e4e732e9026c671cbf57833517d16352d2cb2bc0a6b6570"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_10/evaluation/result.json",
+      "size": 166754,
+      "sha256": "a4ddd082375d42d2590af2e54aeddcce0eb0374c7f61b87fc3a79e95c44172ef"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_10/experiment.json",
+      "size": 3717,
+      "sha256": "71f1b41738768023ddbcfcfb6b66dd53fcb17cf2e7e7d440fd512cd7cfdc2938"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_10/finished.json",
+      "size": 108,
+      "sha256": "04937c8f999b7818612a36bfe723e3fe24dcdaa9e6bfe09a5955e9e323542f80"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_goal/camera-selection.json",
+      "size": 60553,
+      "sha256": "80984dd3ea919f1b6ff58dacfe78cd6ee8b7fd1e8437bbbc089c405711fd2bce"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_goal/evaluation/result.json",
+      "size": 149800,
+      "sha256": "fc36c6e5577a4a0ecf9bbd3da1b617ebd82033406f476f762df1ab5cb755c545"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_goal/experiment.json",
+      "size": 3272,
+      "sha256": "c98652e92dfa570677d9c71d5a1589c4d2af2b177a3a4f8b26b712823bf53dba"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_goal/finished.json",
+      "size": 113,
+      "sha256": "bc0869bc77d15a6fc623bc08931a78839c36bc480fba5a6c730d6d46ae4301ea"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_object/camera-selection.json",
+      "size": 65208,
+      "sha256": "dfc4468180c1c7877d7467b47ebeb13747b879ad5abb1f1b1feabeb235e91459"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_object/evaluation/result.json",
+      "size": 151823,
+      "sha256": "daf01e2d06861d30d62754baf7c95e07a1daf21c112f2dfdd85f4a1c20e5d2f9"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_object/experiment.json",
+      "size": 3274,
+      "sha256": "aee42aeb49f4bdcd3016519bdda602b962bcb863d798240e61f054546a273ed1"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_object/finished.json",
+      "size": 113,
+      "sha256": "91de2224bf009c66032608c63788cb5782c3618b9ba6e624c8754b2ae23e9a52"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_spatial/camera-selection.json",
+      "size": 69469,
+      "sha256": "f5c2c13ad79e2713daecd0bc6563bb25a4915b69e7969f1d6125ad2f0ce386d7"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_spatial/evaluation/result.json",
+      "size": 151548,
+      "sha256": "c107650d8a456055d8ed51d7f698543fea5eb729f97898ef6141e46706e456c9"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_spatial/experiment.json",
+      "size": 3275,
+      "sha256": "55ad5d6880ec1cb2f6058e228f8780c463ebff146249cf233e08c64a3c6b612c"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/libero_spatial/finished.json",
+      "size": 113,
+      "sha256": "f67b6f40e07720987f692e231dd4bddbf74303347fdec3fb2008ebc3ba69306d"
+    },
+    {
+      "path": "experiment-artifacts/camera-all1599-results/verification.json",
+      "size": 3259,
+      "sha256": "e358275b255b12c6c3cb0d4d533bda869ed2affc95f9c87af816d7a417886783"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/camera-selection.json",
+      "size": 82198,
+      "sha256": "e1657e19103a936a4e4e732e9026c671cbf57833517d16352d2cb2bc0a6b6570"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/command.json",
+      "size": 596,
+      "sha256": "285fd67ce3f6715c57de0127c85ee702a8e2f5694b28c3c727ba9e9930ecb727"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/experiment.json",
+      "size": 3717,
+      "sha256": "71f1b41738768023ddbcfcfb6b66dd53fcb17cf2e7e7d440fd512cd7cfdc2938"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/finished.json",
+      "size": 108,
+      "sha256": "04937c8f999b7818612a36bfe723e3fe24dcdaa9e6bfe09a5955e9e323542f80"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/full-summary.json",
+      "size": 291300,
+      "sha256": "93aa44e0c16700df06ee26d6316241c92ed25ba18d31219b3c4ff7d1b5153978"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/gpu-samples.jsonl",
+      "size": 226657,
+      "sha256": "27a112255b47f5f3123b5b2663afa6855b19e0341ba14c2862f7503f1c93bb35"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/kit-environment.json",
+      "size": 264,
+      "sha256": "adba77cc496758e77fba591e562999d7242d1008bcaa787e71757a0bacece653"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/model-environment.json",
+      "size": 6664,
+      "sha256": "f9651f5b9a0f9b3c8f22bc39ef2a33ed3d4a4d4fbbf50691e142e3e8f127bc27"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/report.md",
+      "size": 6443,
+      "sha256": "91017a2e6e149372a4b9157e56eeb542827cbd6d915a44a8d84d487aa7697838"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/result.json",
+      "size": 166754,
+      "sha256": "a4ddd082375d42d2590af2e54aeddcce0eb0374c7f61b87fc3a79e95c44172ef"
+    },
+    {
+      "path": "experiment-artifacts/camera-full419-results/simulator-environment.json",
+      "size": 2670,
+      "sha256": "9e79fc8b95eb417d37698dceccaef1c526e8696132e98cf5b74f30cebefc2cbf"
+    },
+    {
+      "path": "experiment-artifacts/camera-input-diagnosis-results/diagnostic-results.json",
+      "size": 23408,
+      "sha256": "ce84ab88af71b2ba8c990c4316ab703c6a62c4c213f3a8d5de485cb56796c8ee"
+    },
+    {
+      "path": "experiment-artifacts/camera-input-diagnosis-results/score-analysis.json",
+      "size": 141382,
+      "sha256": "311aba1c93109d237e47dcf26445e7f97efc68aeb484b32e4d9fc6153a0887d4"
+    },
+    {
+      "path": "experiment-artifacts/camera-input-diagnosis-results/task-selection.json",
+      "size": 8317,
+      "sha256": "613f1aae8d7ef8f9ea6cdcb1715f15c136a272a9250d8add7b4ed290270565cd"
+    },
+    {
+      "path": "experiment-artifacts/camera-input-diagnosis-results/validation-results.json",
+      "size": 91061,
+      "sha256": "c6e2670e79ffa6e860ec5f97b8a8d5097705127b871b335d0555ee6d2c7687ae"
+    },
+    {
+      "path": "experiment-artifacts/camera-pilot-results/camera-selection.json",
+      "size": 5738,
+      "sha256": "14c556ebd7fb4334dc884ea1582507e9a087ba4e0477b2839eab6af1b51aea1c"
+    },
+    {
+      "path": "experiment-artifacts/camera-pilot-results/experiment.json",
+      "size": 3989,
+      "sha256": "20b03d9a5218e1bc5290adcd9614549955329dc6c1ea6dd20eb293ff0aab5747"
+    },
+    {
+      "path": "experiment-artifacts/camera-pilot-results/finished.json",
+      "size": 111,
+      "sha256": "45d81e4ffb7d71da6cf75a20b2128e5ba12176080d60327ca6102ce892524895"
+    },
+    {
+      "path": "experiment-artifacts/camera-pilot-results/pilot-summary.json",
+      "size": 28211,
+      "sha256": "5e4e3dff29ad042a8c6ba73730c9426cacc892450afa86706ebabb955ff917c2"
+    },
+    {
+      "path": "experiment-artifacts/camera-pilot-results/policy-timing.jsonl",
+      "size": 609453,
+      "sha256": "3d7e7361c927e33cfaafc65a78f8abfeec2482d22cd8f70e3743596fc174a6e8"
+    },
+    {
+      "path": "experiment-artifacts/camera-pilot-results/report.md",
+      "size": 5173,
+      "sha256": "dbb76ab030800d8cb17ac82a37d40081906069f12d3123f58a7f53643a6340a9"
+    },
+    {
+      "path": "experiment-artifacts/camera_full_cli.py",
+      "size": 1566,
+      "sha256": "7bafb192d539df38f869f5c3f8dfcaec1312163dedfc0b7f777cecb878025b32"
+    },
+    {
+      "path": "experiment-artifacts/camera_full_run.py",
+      "size": 6117,
+      "sha256": "6019fe980efcdc7cc6fde47f22ff65b600b4d0bee7e66ec33cc7e99be4ad10ea"
+    },
+    {
+      "path": "experiment-artifacts/camera_pilot_run.py",
+      "size": 6006,
+      "sha256": "d4a3d398b89c2f91a7d98dfb94fb3626a632276a7b9bf52fb8a7a2ffb24db0cd"
+    },
+    {
+      "path": "experiment-artifacts/camera_scored_policy.py",
+      "size": 562,
+      "sha256": "09c9941f5078fc6c28d61b6c9fe0c3b335df6546e724dadd7bcc03ffbad8e34e"
+    },
+    {
+      "path": "experiment-artifacts/camera_subset_cli.py",
+      "size": 1515,
+      "sha256": "00705cfe4f99b49eb7633d7db56d71192e762ba4a4ec596c8b70f86aa3199089"
+    },
+    {
+      "path": "experiment-artifacts/feedback_noise.py",
+      "size": 584,
+      "sha256": "f3e27aba3fc6f1a02b4310eb4b4caae9ff7c3a7c3a6a242d6a539abcdfe3d846"
+    },
+    {
+      "path": "experiment-artifacts/feedback_policy.py",
+      "size": 4488,
+      "sha256": "a4163e61e5ba9d08314ef9b89953729a1c1483e16f9560c10bb3f16e7dd78c96"
+    },
+    {
+      "path": "experiment-artifacts/feedback_run.py",
+      "size": 5928,
+      "sha256": "f399599c26bb832669ea3619afdd1d69d18ff693016485cc4165b4acfb5835d2"
+    },
+    {
+      "path": "experiment-artifacts/kit-extended-results/comparison.json",
+      "size": 33762,
+      "sha256": "bcd160bf427b9e784c90042224f436f7c443dd00e7e99887da4afc003ecf81ed"
+    },
+    {
+      "path": "experiment-artifacts/kit-extended-results/experiment.json",
+      "size": 2770,
+      "sha256": "478ee43f0d9aa383bea7b89282aa67bd7d092f85f414575accd2fb0bf8e8b490"
+    },
+    {
+      "path": "experiment-artifacts/kit-extended-results/finished.json",
+      "size": 65,
+      "sha256": "e6174436a59689f4014e8d81257e08bf26001a6f5a8767327b56f8a9c6204a92"
+    },
+    {
+      "path": "experiment-artifacts/kit-extended-results/report.md",
+      "size": 4252,
+      "sha256": "95cdaf8a9e5ea5fb261e767008c5eee50f987f1f0d44e1b2345e01089c7ceadd"
+    },
+    {
+      "path": "experiment-artifacts/kit-extended-results/summary.json",
+      "size": 7920,
+      "sha256": "e67ebe660c8c84d1f7135af93d3dbda1f912e58fe5f795d49d6db4315251dbc2"
+    },
+    {
+      "path": "experiment-artifacts/kit-improved-results/comparison.json",
+      "size": 16101,
+      "sha256": "afb3fa0df00cc39ba3481e730e9e15e344190acde6854dc5a7f0a30968128be3"
+    },
+    {
+      "path": "experiment-artifacts/kit-improved-results/experiment.json",
+      "size": 3268,
+      "sha256": "ec6d7e7501a8d1059c51565667c48a44ef4e372c9d6540ee10474e64907a8a1d"
+    },
+    {
+      "path": "experiment-artifacts/kit-improved-results/finished.json",
+      "size": 112,
+      "sha256": "a5b0074816807cf83cf619932eb820c5b399a6f744ec2582341b6f40c433664a"
+    },
+    {
+      "path": "experiment-artifacts/kit-improved-results/policy-timing.jsonl",
+      "size": 168074,
+      "sha256": "326eb4500dd4ff67964ff8c4c0d6963ec68c0e54a5c42cd8fe89a3a6449db407"
+    },
+    {
+      "path": "experiment-artifacts/kit-improved-results/report.md",
+      "size": 4845,
+      "sha256": "f38d003d2f9e1d76f59c47a3eae71b9181e7078078f7032160dc168d51d4fa36"
+    },
+    {
+      "path": "experiment-artifacts/kit-improved-results/selection.jsonl",
+      "size": 1556210,
+      "sha256": "068f514848d12fa37c59c8bd35fd96409245657d5cb7d40256244b2171369c10"
+    },
+    {
+      "path": "experiment-artifacts/kit-parallel-results/comparison.json",
+      "size": 20819,
+      "sha256": "3e76e51848d8b898d961940bc555ec3e26cf0391367e5fc84061f8f8a48eba71"
+    },
+    {
+      "path": "experiment-artifacts/kit-parallel-results/experiment.json",
+      "size": 2435,
+      "sha256": "f3d47c557a71113d188b2d671b2817ea17a8d504c7cae4fb62faed86af53a898"
+    },
+    {
+      "path": "experiment-artifacts/kit-parallel-results/finished.json",
+      "size": 65,
+      "sha256": "510ac1bf8f51a3b0eef1875c4d016e28c9a0e2b327721ce6ebafdeef162965bf"
+    },
+    {
+      "path": "experiment-artifacts/kit-parallel-results/report.md",
+      "size": 4465,
+      "sha256": "1d3fe9ae6f4c6990b15e6011c201b1e1436bc3cdf397e04ed992db4a910646b3"
+    },
+    {
+      "path": "experiment-artifacts/kit-parallel-results/summary.json",
+      "size": 5337,
+      "sha256": "b2ae74d2a2acd9d48eb487319259f6f70cd5d03d7b0a51d3c2a5bfd4e4b3e375"
+    },
+    {
+      "path": "experiment-artifacts/kit_parallel_extended.py",
+      "size": 5003,
+      "sha256": "327d19a20fb48e8cf917a3636930310b93b38d057cde53553abf99c53f28682d"
+    },
+    {
+      "path": "experiment-artifacts/kit_parallel_policy.py",
+      "size": 4003,
+      "sha256": "232577e6722713f343e4d3eb93ef5578dd73d6948d7e095dfb8a73f35a7ad942"
+    },
+    {
+      "path": "experiment-artifacts/kit_parallel_run.py",
+      "size": 5181,
+      "sha256": "3931bdc7d4b8d419dd4fb2d7651a7ed09198f76924abf6f9840c5ac85fefbe80"
+    },
+    {
+      "path": "experiment-artifacts/kit_scored_policy.py",
+      "size": 3508,
+      "sha256": "5b12e9c1b8e67bee3a5e64b617f359a461c325b50ddbc9b7ace320bb9a468274"
+    },
+    {
+      "path": "experiment-artifacts/kit_scored_run.py",
+      "size": 4104,
+      "sha256": "60b92dc22b7d89380afbbd9ee53d2867a7ab573301d8fdeaf6c9a189fb3bb4f1"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/client-total.json",
+      "size": 52,
+      "sha256": "81775fc55c75a696716f34d0ce6bc3624a3251f2a4c4fbf01f74990c6bb2ffb2"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/client.log",
+      "size": 14917,
+      "sha256": "5288b4a8456f7e9fa54a87e006821ca400af34db169d2e12627542fa6a34632f"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/episodes.json",
+      "size": 79093,
+      "sha256": "8b745fc7492f7940ce9cd7a082cb816b02a00b4208c3f132d276076833b70fae"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/finished.json",
+      "size": 103,
+      "sha256": "bb74b88734f1a7655b3d143c4fca3359d36945858879350cd80d5eeccd518d16"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/gpu-samples.jsonl",
+      "size": 11848,
+      "sha256": "10a6f0ce2e1795165e48264aafeed533538d2ea4991599b3d768a6c9bd0115f2"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/manifest.json",
+      "size": 2414,
+      "sha256": "47e85fa8501926ab44d4a5e0d8ef5e825ddc52621f4deec42aa2e075112fa0e5"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/model-load.json",
+      "size": 137,
+      "sha256": "9cfcf7262b3183a4f3998861fa3a28d58d5e7ec33e8db689d50737629a3949ad"
+    },
+    {
+      "path": "experiment-artifacts/official-timing-results/report.md",
+      "size": 4075,
+      "sha256": "b520e4b1232331cee9f686b0803b4f93682916118811576c572ac4a714141bd8"
+    },
+    {
+      "path": "experiment-artifacts/official_timing_client.py",
+      "size": 4762,
+      "sha256": "cfb27c04661430d8888dcf45d6c231d95d9e3b44be8964a7dbc50da29cf49211"
+    },
+    {
+      "path": "experiment-artifacts/official_timing_run.py",
+      "size": 5013,
+      "sha256": "11255dab1a570d2cb15433a7c2a76580ce9295462b5bf32345bcd0f6881fb704"
+    },
+    {
+      "path": "experiment-artifacts/official_timing_server.py",
+      "size": 760,
+      "sha256": "17755d29af5d2cc7291d0da69389c72b601716e8230627f7bf6b3e09c3539356"
+    },
+    {
+      "path": "experiment-artifacts/prompt_diagnostic_cli.py",
+      "size": 1102,
+      "sha256": "3e0da048104d3711ea802e37dfa5b11093a36e29c61d65a477f6f7627f279592"
+    },
+    {
+      "path": "experiment-artifacts/prompt_diagnostic_policy.py",
+      "size": 1924,
+      "sha256": "bd67a77ca64c65c64cb3af230d04e3480acb5f34b8141ef361950acd94e6af2f"
+    },
+    {
+      "path": "experiment-artifacts/prompt_diagnostic_run.py",
+      "size": 5746,
+      "sha256": "f982425a5edc38574b821dbecc978cac0f37e33b2617a2941e53474acf5e9a4e"
+    }
+  ],
+  "archive": {
+    "file": "prp-process-evidence.zip",
+    "size": 10998433,
+    "sha256": "8b64fdb6774673b8e2d9d32dbcc5976c965abd54070c903cb739539f9843efb3"
+  }
+}

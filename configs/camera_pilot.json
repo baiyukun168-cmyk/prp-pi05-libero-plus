@@ -1,0 +1,39 @@
+{
+  "benchmark": "libero_plus",
+  "suite": "libero_10",
+  "category": "Camera Viewpoints",
+  "seed": 7,
+  "init_state_id": 0,
+  "settle_steps": 10,
+  "action_chunk_size": 5,
+  "selection_rule": "Middle entry of each difficulty group in official metadata order",
+  "metadata_sha256": "faa87cce3e3ba434da01df7c77523a391b5f2912e4774330b0aa1be5f6a999e6",
+  "scope": "Five-task exploratory Camera validation; one episode per mode per task",
+  "tasks": [
+    {
+      "task_id": 724,
+      "difficulty": 1,
+      "official_name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_view_26_0_100_0_0_initstate_0"
+    },
+    {
+      "task_id": 727,
+      "difficulty": 2,
+      "official_name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_view_27_15_100_0_0_initstate_0"
+    },
+    {
+      "task_id": 799,
+      "difficulty": 3,
+      "official_name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it_view_0_0_100_8_358_initstate_0"
+    },
+    {
+      "task_id": 926,
+      "difficulty": 4,
+      "official_name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate_view_0_0_165_0_0_initstate_0"
+    },
+    {
+      "task_id": 908,
+      "difficulty": 5,
+      "official_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_view_292_15_100_0_0_initstate_0"
+    }
+  ]
+}

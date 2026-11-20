@@ -2,6 +2,26 @@
 set -euo pipefail
 
 root="${PRP_ROOT:-/root/prp}"
+candidate_source=""
+run_prefix=pi05-libero-plus
+case "${1:-}" in
+    "") ;;
+    --candidate|--shared-candidate|--scored-candidate)
+        script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+        candidate_source="$script_dir/../src/policies/pi05_candidate_policy.py"
+        run_prefix=pi05-libero-plus-candidates
+        if [[ "$1" == --shared-candidate ]]; then
+            candidate_source="$script_dir/../src/policies/pi05_shared_candidate_policy.py"
+            run_prefix=pi05-libero-plus-shared
+        fi
+        if [[ "$1" == --scored-candidate ]]; then
+            candidate_source="$script_dir/../src/policies/pi05_scored_candidate_policy.py"
+            run_prefix=pi05-libero-plus-scored
+        fi
+        [[ -s "$candidate_source" ]] || { echo "Missing candidate Policy: $candidate_source" >&2; exit 1; }
+        ;;
+    *) echo "Usage: $0 [--candidate|--shared-candidate|--scored-candidate]" >&2; exit 2 ;;
+esac
 runtime="$root/libero-plus-runtime"
 openpi="$root/openpi"
 kit="$root/RoboScope-Kit"
@@ -19,6 +39,7 @@ fi
 
 original_library_path="${LD_LIBRARY_PATH-}"
 export LD_LIBRARY_PATH="$tools/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export MAGICK_HOME="${MAGICK_HOME:-$tools}"
 export MUJOCO_GL=egl
 
 if [[ -z "${__EGL_VENDOR_LIBRARY_FILENAMES:-}" ]]; then
@@ -46,7 +67,7 @@ with mujoco.Renderer(model, height=64, width=64) as renderer:
 PY
 
 mkdir -p "$root/results/smoke"
-session="$(mktemp -d "$root/results/smoke/pi05-libero-plus.XXXXXX")"
+session="$(mktemp -d "$root/results/smoke/$run_prefix.XXXXXX")"
 output="$session/evaluation"
 echo "Run directory: $session"
 
@@ -60,10 +81,15 @@ from roboscope_kit import ActionChunk, BenchmarkName, Policy, PolicyCapabilities
 
 
 class Pi05LiberoPlusPolicy(Policy):
+    action_chunk_size = 5
+    sample_kwargs = None
+
     def load(self, context):
         print(f"JAX GPU: {jax.devices('gpu')}", flush=True)
+        model_config = config.get_config("pi05_libero")
+        self.noise_shape = (model_config.model.action_horizon, model_config.model.action_dim)
         self.policy = policy_config.create_trained_policy(
-            config.get_config("pi05_libero"), context.checkpoint_path
+            model_config, context.checkpoint_path, sample_kwargs=self.sample_kwargs
         )
         benchmark = BenchmarkName.LIBERO_PLUS.value
         return PolicyCapabilities(
@@ -73,10 +99,10 @@ class Pi05LiberoPlusPolicy(Policy):
                 "state.proprioception", "language.instruction",
             ),
             supported_suites={benchmark: ("libero_10",)},
-            supported_action_chunk_sizes=(5,),
+            supported_action_chunk_sizes=(self.action_chunk_size,),
         )
 
-    def act(self, observation):
+    def model_input(self, observation):
         features = observation.features
         proprio = np.asarray(features["state.proprioception"], dtype=np.float32)
         # LIBERO sends position, an XYZW quaternion, then gripper qpos.
@@ -86,7 +112,7 @@ class Pi05LiberoPlusPolicy(Policy):
         if sin_half_angle > 0.0:
             rotation = proprio[3:6] * np.float32(2.0 * np.arccos(w) / sin_half_angle)
 
-        model_input = {
+        return {
             "observation/image": image_tools.convert_to_uint8(
                 image_tools.resize_with_pad(features["images.primary"], 224, 224)
             ),
@@ -96,23 +122,39 @@ class Pi05LiberoPlusPolicy(Policy):
             "observation/state": np.concatenate((proprio[:3], rotation, proprio[7:9])),
             "prompt": features["language.instruction"],
         }
-        actions = np.asarray(self.policy.infer(model_input)["actions"], dtype=np.float32)
-        if actions.shape != (10, 7) or not np.isfinite(actions).all():
-            raise ValueError(f"Expected finite OpenPI actions of shape (10, 7), got {actions.shape}")
-        return ActionChunk(np.ascontiguousarray(actions[:5]))
+    def action_prefix(self, model_input, *, noise=None):
+        actions = np.asarray(self.policy.infer(model_input, noise=noise)["actions"], dtype=np.float32)
+        expected_shape = (self.noise_shape[0], 7)
+        if actions.shape != expected_shape or not np.isfinite(actions).all():
+            raise ValueError(f"Expected finite OpenPI actions of shape {expected_shape}, got {actions.shape}")
+        return np.ascontiguousarray(actions[:self.action_chunk_size])
+
+    def act(self, observation):
+        return ActionChunk(self.action_prefix(self.model_input(observation)))
 
 
 if __name__ == "__main__":
     run(Pi05LiberoPlusPolicy())
 PY
 
-"$tools/bin/python" - "$session" "$openpi" "$kit" "$original_library_path" <<'PY'
+policy_entry=policy.py
+if [[ -n "$candidate_source" ]]; then
+    policy_entry="$(basename -- "$candidate_source")"
+    cp -- "$candidate_source" "$session/$policy_entry"
+    if [[ "$policy_entry" == pi05_shared_candidate_policy.py || "$policy_entry" == pi05_scored_candidate_policy.py ]]; then
+        cp -- "$script_dir/../src/policies/pi05_candidate_policy.py" "$script_dir/../src/policies/shared_prefix_sampler.py" "$session/"
+        cp -- "$script_dir/../src/policies/candidate_selection.py" "$session/"
+    fi
+fi
+
+"$tools/bin/python" - "$session" "$openpi" "$kit" "$original_library_path" "$policy_entry" "$manifest" <<'PY'
 import json
 from pathlib import Path
 import sys
 
 session, openpi, kit = (Path(arg) for arg in sys.argv[1:4])
 library_path = sys.argv[4]
+policy_entry = sys.argv[5]
 command = ["/usr/bin/env"]
 if library_path:
     command.append(f"LD_LIBRARY_PATH={library_path}")
@@ -121,8 +163,11 @@ else:
 command.extend((
     f"PYTHONPATH={kit / 'packages/roboscope-kit/src'}",
     str(openpi / ".venv/bin/python"),
-    str(session / "policy.py"),
+    str(session / policy_entry),
 ))
+if policy_entry in ("pi05_candidate_policy.py", "pi05_shared_candidate_policy.py", "pi05_scored_candidate_policy.py"):
+    manifest = json.loads(Path(sys.argv[6]).read_text())
+    command.append(str(manifest["defaults"].get("seed", 7)))
 config = {"schema_version": 2, "command": command, "cwd": str(openpi)}
 (session / "roboscope-policy.json").write_text(json.dumps(config, indent=2) + "\n")
 PY
@@ -136,7 +181,7 @@ PY
     --policy-config "$session/roboscope-policy.json" \
     --output-dir "$output"
 
-"$tools/bin/python" - "$output/result.json" <<'PY'
+"$tools/bin/python" - "$output/result.json" "$policy_entry" <<'PY'
 import json
 from pathlib import Path
 import sys
@@ -144,12 +189,24 @@ import sys
 path = Path(sys.argv[1])
 report = json.loads(path.read_text())
 result = report["result"]
+if result["episodes"] != 1 or result["total_steps"] <= 0:
+    raise SystemExit("Expected one terminal episode with at least one executed policy step.")
+
+candidate_details = {}
+if sys.argv[2] in ("pi05_candidate_policy.py", "pi05_shared_candidate_policy.py", "pi05_scored_candidate_policy.py"):
+    candidate_log = path.parent.parent / "candidates.jsonl"
+    with candidate_log.open() as stream:
+        requests = sum(1 for line in stream if line.strip())
+    expected_requests = (result["total_steps"] + 4) // 5
+    if requests != expected_requests:
+        raise SystemExit(f"Expected {expected_requests} candidate log records, found {requests}.")
+    candidate_details = {"candidate_requests": requests, "candidate_log": str(candidate_log)}
+
 print(json.dumps({
     "episodes": result["episodes"],
     "total_steps": result["total_steps"],
     "record_success": report["record_success"],
     "result_file": str(path),
+    **candidate_details,
 }, indent=2))
-if result["episodes"] != 1 or result["total_steps"] <= 0:
-    raise SystemExit("Expected one terminal episode with at least one executed policy step.")
 PY

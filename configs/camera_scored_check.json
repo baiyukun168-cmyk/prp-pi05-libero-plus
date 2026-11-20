@@ -1,0 +1,26 @@
+{
+  "benchmark": "libero_plus",
+  "suite": "libero_10",
+  "category": "Camera Viewpoints",
+  "modes": [
+    "scored"
+  ],
+  "seed": 7,
+  "init_state_id": 0,
+  "settle_steps": 10,
+  "action_chunk_size": 5,
+  "min_score_gap": 0.05,
+  "max_flow_residual": null,
+  "draft_steps": 4,
+  "fallback_steps": 10,
+  "verification_time": 0.5,
+  "metadata_sha256": "faa87cce3e3ba434da01df7c77523a391b5f2912e4774330b0aa1be5f6a999e6",
+  "scope": "One Camera task connection check; improved policy only",
+  "tasks": [
+    {
+      "task_id": 682,
+      "difficulty": 3,
+      "official_name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket_view_0_0_100_2_6_initstate_0"
+    }
+  ]
+}

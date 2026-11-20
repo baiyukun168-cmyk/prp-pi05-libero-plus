@@ -34,3 +34,7 @@ git -C third_party/openpi submodule update --init --recursive
 ## 实验进度
 
 云端 RTX 4090 已加载原始 π0.5 并通过 LIBERO-Plus 单任务 Smoke Test。见[验证报告](docs/smoke_test_report.md)和[启动脚本](scripts/run_pi05_libero_plus_smoke.sh)。本次完成 1 个 Episode、250 步，任务成功。正式 Baseline 待测。见[结果摘要](docs/runs/smoke_4090.json)。
+
+## 2026-11-20 实验归档
+
+已完成 1599 条 Camera 评测及三组算法拆分。代码、配置、脚本和脱敏报告见[归档索引](docs/archives/2026-11-20/README.md)，完整原始证据准备存入私有 Hugging Face Dataset。当前方法尚无稳定综合提升证据，详细统计与限制见报告。
