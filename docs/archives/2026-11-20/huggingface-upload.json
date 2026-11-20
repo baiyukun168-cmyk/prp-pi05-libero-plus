@@ -1,0 +1,13 @@
+{
+  "snapshot_utc": "20261120T134340Z",
+  "repo_id": "byk666666/prp-libero-plus-data",
+  "url": "https://huggingface.co/datasets/byk666666/prp-libero-plus-data",
+  "visibility": "private",
+  "commit": "dc634ca9f47fca8d9afdf112a00f443b30e93931",
+  "file_count": 369,
+  "archive_bytes": 10998433,
+  "archive_sha256": "8b64fdb6774673b8e2d9d32dbcc5976c965abd54070c903cb739539f9843efb3",
+  "uploaded_files": 5,
+  "readback_sha256_verified": true,
+  "scope": "Local project and discovered experiment artifacts only; cloud-only logs not fetched."
+}

@@ -37,4 +37,4 @@ git -C third_party/openpi submodule update --init --recursive
 
 ## 2026-11-20 实验归档
 
-已完成 1599 条 Camera 评测及三组算法拆分。代码、配置、脚本和脱敏报告见[归档索引](docs/archives/2026-11-20/README.md)，完整原始证据准备存入私有 Hugging Face Dataset。当前方法尚无稳定综合提升证据，详细统计与限制见报告。
+已完成 1599 条 Camera 评测及三组算法拆分。代码、配置、脚本和脱敏报告见[归档索引](docs/archives/2026-11-20/README.md)，现有本地原始证据已存入[私有 Hugging Face Dataset](https://huggingface.co/datasets/byk666666/prp-libero-plus-data)，上传文件均已下载回读并通过 SHA-256 校验。当前方法尚无稳定综合提升证据，详细统计与限制见报告。
