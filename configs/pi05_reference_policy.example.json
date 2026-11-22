@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "cwd": "<OPENPI_CHECKOUT>",
+  "command": [
+    "/usr/bin/env",
+    "-u",
+    "LD_LIBRARY_PATH",
+    "PYTHONPATH=<PROJECT_ROOT>/src/policies:<ROBOSCOPE_KIT_ROOT>/packages/roboscope-kit/src",
+    "FEEDBACK_TRIAL_DIR=<PRIVATE_OUTPUT_DIR>",
+    "PROMPT_SELECTION=<PRIVATE_TASK_SELECTION_JSON>",
+    "GENERATION_STEPS=10",
+    "EXECUTION_STEPS=5",
+    "ACTION_NOISE_SEED=7",
+    "<OPENPI_PYTHON>",
+    "<PROJECT_ROOT>/src/policies/feedback_policy.py"
+  ]
+}

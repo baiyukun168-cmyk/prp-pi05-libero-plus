@@ -29,3 +29,6 @@ The current private dataset is https://huggingface.co/datasets/byk666666/prp-lib
 
 The existing core test suite also expects the upstream benchmark task_classification.json in results/paired/. Supply that fixture locally from the pinned LIBERO+ checkout; it is intentionally excluded from the public upload.
 
+## Reference policy and configuration
+
+`src/policies/policy.py`, `feedback_policy.py` and `feedback_noise.py` preserve the baseline adapter and deterministic physical-step noise helper used by the cloud evaluation. `configs/pi05_reference_policy.example.json` is an SDK policy configuration template; replace every angle-bracket placeholder before use. The output directory must already exist. Its private task-selection JSON needs a `prompts` mapping from episode ID to the actual BDDL instruction. This avoids treating task filename perturbation suffixes as language instructions. This is not a self-contained full-benchmark launcher.
